@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Sertifikat</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('https://fonts.gstatic.com/s/montserrat/v20/JTUHjIg1_i6t8kCHKm45_QpRyS7m.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header di atas -->
+    <header>
+        <h1>Sertifikat Peserta</h1> <!-- Judul utama -->
+        <h2>COS.SMANSABUM 2024</h2> <!-- Judul kedua -->
+    </header>
+
+    <!-- Konten Formulir Sertifikat -->
+    <div class="container">
+        <form id="certificateForm">
+            <label for="name">Masukkan Nama:</label>
+            <input type="text" id="name" placeholder="Nama Anda" required>
+            <button type="submit">Buat Sertifikat</button>
+        </form>
+    </div>
+
+    <!-- Pop-up Sertifikat -->
+    <div id="certificateContainer">
+        <canvas id="certificateCanvas" width="842" height="595"></canvas>
+        <a id="downloadLink" style="display: none;">Download Sertifikat</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
